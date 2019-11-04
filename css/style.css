@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+.heading {text-align: center;}
+.heading h2{
+    color: #2d3950;
+    font-size: 40px;
+    padding-top: 70px;
+}
+.heading p{
+    font-size: 20px;
+    color: #999999;
+    margin-top: 32px;
+    padding-bottom: 90px;
+}
+
+/*
+ ===========================
+ Header section
+ ===========================
+ */
+
+header{
+    background-color: #F6F9F9;
+    padding: 28px 0px;
+    overflow: hidden;
+}
+
+/*************logo**************/
+.logo{
+    max-width: 20%;
+    flex-basis: 20%;
+}
+.logo img{}
+
+
+/*************Nav**************/
+nav{
+    max-width: 80%;
+    flex-basis: 80%;
+}
+nav ul{
+    justify-content: flex-end;
+}
+nav ul li{}
+nav ul li a{font-weight: bold;
+	font-size: 16px;
+	color: #2d3950;
+	padding: 12px;
+	display: block;}
+nav ul li a:hover{
+	color: #15A4FA;
+}
+
+
+ /*
+ =======================================
+ Banner section
+ ===========================
+ */
+
+.banner-section{
+	background: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.banner-section .row{
+    justify-content: center;
+    min-height: 90vh;
+    align-items: center;
+}
+.banner-content{
+    max-width: 55%;
+    flex-basis: 55%;
+    text-align: center;
+}
+
+
+
+.banner-content h1{
+    font-size: 120px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.banner-content span{
+    width: 100%;
+    height: 2px;
+    background-color: #15a4fa;
+    display: block;
+}
+.banner-content p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.banner-content button{
+    font-size: 18px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #15a4fa;
+    border-radius: 5px;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+
+.banner-section .arrow{
+    position: absolute;
+    bottom: 3em;
+    left: 50%;
+    transform: translate(-50%);
+}
+.arrow a{
+	color:#fff;
+	font-size: 30px;
+}
+
+/*
+ =======================================
+ About section
+ ===========================
+ */
+
+section.about-section{
+    background: #f6f9f9;
+}
+
+
+
+/*
+ =======================================
+ Features section
+ ===========================
+ */
+
+section.features-section{}
+.features-section .col{
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+    text-align: center;
+    padding: 65px 30px;
+}
+.col .feature-icon{
+    width: 100px;
+    height: 100px;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,2989d8+50,207cca+51,5fc3ff+100 */
+     /* Old browsers */
+     /* FF3.6-15 */
+     /* Chrome10-25,Safari5.1-6 */
+     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     /* IE6-9 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5fc3ff+50,48baff+50 */
+     /* Old browsers */
+     /* FF3.6-15 */
+     /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(95,195,255,1) 50%,rgba(72,186,255,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     /* IE6-9 */
+    font-size: 55px;
+    line-height: 100px;
+    color: #fff;
+    text-shadow: 1px 2px 5px #00000075;
+}
+.col .feature-content{}
+.feature-content h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #2d3950;
+}
+.feature-content p{}
+
+/*
+ =======================================
+ Showcase section
+ ===========================
+ */
+
+section.showcase-section{
+    background-color: #F6F9F9;
+}
+
+
+/*
+ =======================================
+ Showcase
+ ===========================
+ */
+
+.showcase-section .showcase{
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+    padding: 15px;
+}
+.showcase .showcase-details{position: relative;}
+.showcase-details img{}
+.showcase .overlay{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    background-color: #15a4fad9;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.showcase-details:hover .overlay{
+	opacity: 1;
+	height: 100%;
+}
+.showcase .plus{
+    position: absolute;
+    color: #fff;
+    width: 35px;
+    border-radius: 4px;
+    height: 35px;
+    border: 1px solid #fff;
+    left: 37%;
+    text-align: center;
+    line-height: 35px;
+    top: 50%;
+    transform: translate(-37%, -50%);
+}
+.showcase .link{
+    position: absolute;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    right: 37%;
+    line-height: 35px;
+    top: 50%;
+    text-align: center;
+    transform: translate(-37%, -50%);
+}
+
+
+/*
+ =======================================
+ Contact section
+ ===========================
+ */
+
+section.contact-section{
+    background: url(../images/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2d3950;
+    background-blend-mode: soft-light;
+    padding-bottom: 100px;
+}
+.contact-section .overlay{}
+.contact-section .heading h2{
+    color: #fff;
+}
+
+.contact-section .heading p{
+	
+color: #f5eded9c;
+}
+
+.contact-section .row{
+	justify-content: center;
+}
+
+/*
+ =======================================
+ Contact form
+ ===========================
+ */
+
+.contact-form{
+    max-width: 60%;
+    flex-basis: 60%;
+}
+.contact-form form{}
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 1px solid #999;
+}
+
+
+.contact-form form ul{}
+.contact-form form ul li{
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.contact-form form ul li input{}
+.contact-form form ul li input[type="checkbox"]{
+    width: auto;
+}
+.contact-form form ul li input[type="submit"]{
+    width: auto;
+    float: right;
+    font-size: 18px;
+    padding: 13px 50px;
+    cursor: pointer;
+    border-color: #15a4fa;
+}
+.contact-form form ul li label{
+    color: #fff;
+    margin-left: 10px;
+}
+
+
+
+/*
+ =======================================
+ footer section
+ ===========================
+ */
+
+
+
+footer{
+    padding: 25px 0px;
+    background-color: #F6F9F9;
+}
+.copyright{
+	max-width: 50%;
+    flex-basis: 50%;
+}
+.copyright p{
+	color: #999;
+    font-size: 14px;
+    line-height: 30px;
+}
+.copyright a{}
+.social-list{
+	max-width: 50%;
+    flex-basis: 50%;
+}
+.social-list ul {
+	justify-content: flex-end;
+}
+.social-list ul li{}
+.social-list ul li a{
+	width: 40px;
+    height: 40px;
+    display: block;
+    background-color: #15a4fa;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: all 0.4s;
+}
+
+
+
