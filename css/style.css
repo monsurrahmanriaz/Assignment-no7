@@ -8,7 +8,7 @@
 
 header{
     background-color: #F6F9F9;
-    padding: 28px 0px;
+    padding: 25px 0px;
     overflow: hidden;
 }
 
@@ -99,15 +99,30 @@ nav ul li a:hover{
     box-shadow: 3px 5px 5px #00000070;
 }
 
-.banner-section .arrow{
+a.arrow{
+    color:#fff;
+    font-size: 25px;
     position: absolute;
     bottom: 3em;
     left: 50%;
     transform: translate(-50%);
+    animation-name: arrow-down;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
-.arrow a{
-    color:#fff;
-    font-size: 30px;
+
+@keyframes arrow-down{
+    0%{
+        bottom: 3em;
+    }
+    50%{
+        bottom: 1em;
+    }
+    100%{
+        bottom: 3em;
+    }
 }
 
 /*
